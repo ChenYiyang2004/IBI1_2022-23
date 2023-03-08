@@ -1,4 +1,4 @@
-ChHello. 
+Hello.
 My name is Chen Yiyang.
 I like sleeping.
-I don't like water.
+I don't like bread.
