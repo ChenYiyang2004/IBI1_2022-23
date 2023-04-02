@@ -1,0 +1,3 @@
+How have new cases and total cases developed over time in the UK?
+line number:44-51
+At first, total number and new cases number are very low.But at 2020-03-12, total number increases abruptly and new cases number increase,too.
