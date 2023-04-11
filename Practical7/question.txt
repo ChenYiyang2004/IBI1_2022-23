@@ -1,3 +1,3 @@
-Question: How have total cases developed over time in the UK?
-line number:57-65
-Discussion: At first, total number was very low and develop slowly. But at 2020-03-12, total number increased abruptly and kept growing fast.
+Question: How have total cases and new casesdeveloped over time in the UK?
+line number:52-63
+Discussion: At first, total number was very low and develop slowly. But at 2020-03-12, total number increased abruptly and kept growing fast. Number of new cases was also low at first, and began to increase slowly after 2020-03-12.

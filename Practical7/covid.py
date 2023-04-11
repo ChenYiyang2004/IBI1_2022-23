@@ -26,40 +26,38 @@ plt.ylabel("number of cases")
 plt.xticks(deaths)
 plt.xlabel("new deaths in different areas")
 plt.title("New deaths on 31st March 2020")
-plt.boxplot(deaths)
+plt.boxplot(deaths,showfliers = False)
 plt.show()
 plt.ylabel("number of cases")
 plt.xticks(cases)
 plt.xlabel("new cases in different areas")
 plt.title("New cases on 31st March 2020")
-plt.boxplot(cases)
+plt.boxplot(cases,showfliers = False)
 plt.show()
-#plot new cases worldwide over time
+#plot new cases and new deaths worldwide over time
 world=covid_data.loc[covid_data.loc[:,"location"]=="World",:]
 world_new_cases=world.loc[:,"new_cases"]
+world_new_deaths=world.loc[:,"new_deaths"]
 world_dates=world.loc[:,"date"]
 plt.ylabel("number of cases")
 plt.xlabel("date")
-plt.title("New cases worldwide over time")
-plt.plot(world_dates, world_new_cases, 'b+')
+plt.title("New cases and new deaths worldwide over time")
+plt.plot(world_dates, world_new_cases, 'b+', label="world new cases")
+plt.plot(world_dates, world_new_deaths, 'r+',label="world new deaths")
 plt.xticks(world_dates.iloc[0:len(world_dates):4],rotation=300)
-plt.show()
-#plot new deaths worldwide over time
-world_new_deaths=world.loc[:,"new_deaths"]
-plt.ylabel("number of cases")
-plt.xlabel("date")
-plt.title("New deaths worldwide over time")
-plt.plot(world_dates, world_new_deaths, 'b+')
-plt.xticks(world_dates.iloc[0:len(world_dates):4],rotation=300)
+plt.legend(loc="best",fontsize=12)
 plt.show()
 #the code answering the question
-#show the plot of total cases in UK to show the development
+#show the plot of total cases and new cases in UK to show the development
 UK=covid_data.loc[covid_data.loc[:,"location"]=="United Kingdom",:]
 UK_total=UK.loc[:,"total_cases"]
+UK_new_cases=UK.loc[:,"new_cases"]
 UK_date=UK.loc[:,"date"]
 plt.ylabel("number of cases")
 plt.xlabel("date")
-plt.title("Total cases in UK over time")
-plt.plot(UK_date,UK_total)
+plt.title("Total cases and new cases in UK over time")
+plt.plot(UK_date,UK_total,label="total cases")
+plt.plot(UK_date,UK_new_cases,label="new cases")
 plt.xticks(UK_date.iloc[0:len(UK_date):4],rotation=300)
+plt.legend(loc="best")
 plt.show()
