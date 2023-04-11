@@ -5,8 +5,8 @@ import matplotlib.pyplot as plt
 import numpy as np
 #change work dictionary
 os.chdir("./")
-print(os.getcwd())
-print(os.listdir())
+#print(os.getcwd())
+#print(os.listdir())
 #import data
 covid_data = pd.read_csv("full_data.csv")
 #show the second column from every 100th row from the first 1000 rows 
