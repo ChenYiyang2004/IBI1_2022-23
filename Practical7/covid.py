@@ -4,7 +4,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import numpy as np
 #change work dictionary
-os.chdir("C:/cygwin64/home/86134/IBI1_2022-23/Practical7")
+os.chdir("./")
 print(os.getcwd())
 print(os.listdir())
 #import data
