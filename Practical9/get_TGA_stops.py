@@ -16,7 +16,7 @@ for line in a:
 del d[0]
 for i in range(0,len(d)):
 	if re.search(r".+TGA$",d[i]):
-		b.write(d[i])
+		b.write(d[i]+"\n")
 a.close()
 b.close()			
 
