@@ -17,7 +17,7 @@ for line in a:
 		c=c+line
 del d[0]
 for i in range(0,len(d)):
-	if re.search(f".+{input}$",d[i]):
+	if d[i].endswith('TGA'):
 		seq=d[i]
 		number=seq.count(f"{input}")
 		y=re.search(r"(^>.+)(\n.+)",seq)
@@ -26,8 +26,6 @@ for i in range(0,len(d)):
 a.close()
 b.close()			
 	
-
-
 
 
 

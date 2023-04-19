@@ -14,9 +14,8 @@ for line in a:
 		line=line.replace("\n","")		
 		c=c+line
 del d[0]
-for i in range(0,len(d)):
-	if re.search(r".+TGA$",d[i]):
-		b.write(d[i]+"\n")
+output='\n'.join([d[i] for i in range(len(d)) if d[i].endswith('TGA')])
+b.write(output)
 a.close()
 b.close()			
 
