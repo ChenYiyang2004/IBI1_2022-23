@@ -1,13 +1,13 @@
-1.The alignment score
-	human-mouse:144
-	human-cat:119
-	mouse-cat:147
+1.The BLOSUM score
+	human-mouse:3579
+	human-cat:3717
+	mouse-cat:3592
 
 2.The	percentage of identical	amino	acids
 	human-mouse:82.11%
 	human-cat:85.22%
 	mouse-cat:81.74%
 
-3.Conclusion
-	Because the largest percentage of identical amino acids is between human and cat, human and cat have the most related sequences. From these data, we can form a evolutionary interpretation that human and cat may have the closer evolutionary distance than the evolutionary distance of human-mouse and mouse-cat. Additionally, 
-the percentage of identical amino acids of human-mouse and mouse-cat are similar. So, evolutionary distances of mouse to human and cat may be similar.	
+3.Interpretation
+	Because the largest BLOSUM score and percentage of identical amino acids is between human and cat, human and cat have the most related sequences. From these data, we can form a evolutionary interpretation that human and cat may have the closer evolutionary distance than the evolutionary distance of human-mouse and mouse-cat. 
+	Additionally, the BLOSUM score and the percentage of identical amino acids of human-mouse and mouse-cat are similar. So, evolutionary distances of mouse to human and cat may be similar.	
