@@ -1,3 +1,4 @@
+#Please use your own copy of the xml file obtained from Learn, because this file is bigger than 25MB and we can not upload it to github directly
 import xml.dom.minidom
 import re
 import pandas
@@ -9,8 +10,8 @@ def nodes(ID):
     for i in terms:
         is_a = i.getElementsByTagName('is_a')
         for j in is_a:
-            if j.childNodes[0].nodeValue == ID:
-                node += nodes(i.getElementsByTagName("id")[0].childNodes[0].nodeValue)+1
+        	if j.childNodes[0].nodeValue == ID:
+        		node += nodes(i.getElementsByTagName("id")[0].childNodes[0].nodeValue)+1
     return node
 data=[]
 for i in terms:
